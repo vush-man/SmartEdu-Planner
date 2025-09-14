@@ -1,4 +1,5 @@
-Smart Classroom Timetable Management System
+# Smart Classroom Timetable Management System
+
 A web-based application built with Flask to manage, view, and organize classroom schedules. The system provides separate interfaces for administrators and students, with features for automatic substitute assignment and timetable exporting.
 
 📜 Project Overview
@@ -43,7 +44,7 @@ To get the project running locally, follow these steps:
 
 1. Clone the Repository
 git clone [here](https://github.com/vush-man/SmartEdu-Planner.git).
-cd smart-classroom
+cd SmartEdu-Planner
 
 2. Create a Virtual Environment
 It is highly recommended to use a virtual environment to manage project dependencies.
@@ -71,5 +72,6 @@ Start the Flask development server.
 
 
 python run.py
+
 
 
