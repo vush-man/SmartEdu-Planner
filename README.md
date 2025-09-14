@@ -69,15 +69,19 @@ python run.py
 ```
 # Default login credentials
 ### For Student
-- **ID 1:** studentA
+**1st ID:** studentA
+
 **Password:** student
 
-**ID 2:** studentB
+**2nd ID:** studentB
+
 **Password:** student
 
 ### For Admin
 **ID:** admin
+
 **Password:** admin
+
 
 
 
