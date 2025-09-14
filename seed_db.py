@@ -7,14 +7,12 @@ def seed_data():
     app = create_app()
     with app.app_context():
         print("Clearing existing database tables...")
-        # Clear data in reverse order of dependencies to avoid foreign key issues
         Lecture.query.delete()
         Teacher.query.delete()
         User.query.delete()
         
         print("Adding new sample data...")
         
-        # --- Create Users ---
         print("Adding users...")
         admin = User(username='admin', role='admin')
         admin.set_password('admin')
@@ -28,7 +26,6 @@ def seed_data():
         db.session.add_all([admin, student_a, student_b])
         db.session.commit()
 
-        # --- Create Teachers ---
         print("Adding teachers...")
         t1 = Teacher(name="Prof. Sharma", subject="Physics")
         t2 = Teacher(name="Prof. Gupta", subject="Physics")
@@ -36,19 +33,16 @@ def seed_data():
         t4 = Teacher(name="Prof. Singh", subject="Chemistry")
         t5 = Teacher(name="Prof. Iyer", subject="Biology")
         db.session.add_all([t1, t2, t3, t4, t5])
-        db.session.commit() # Commit to get teacher IDs
+        db.session.commit()
 
-        # --- Create Lectures ---
         print("Adding lectures...")
         lectures_to_add = [
-            # Section A
             Lecture(section="A", day="Monday", time_slot="09:00 AM", subject="Physics", teacher_id=t1.id),
             Lecture(section="A", day="Monday", time_slot="11:00 AM", subject="Math", teacher_id=t3.id),
             Lecture(section="A", day="Tuesday", time_slot="10:00 AM", subject="Chemistry", teacher_id=t4.id),
             Lecture(section="A", day="Wednesday", time_slot="09:00 AM", subject="Biology", teacher_id=t5.id),
             Lecture(section="A", day="Friday", time_slot="01:00 PM", subject="Physics", teacher_id=t1.id),
             
-            # Section B
             Lecture(section="B", day="Monday", time_slot="10:00 AM", subject="Math", teacher_id=t3.id),
             Lecture(section="B", day="Tuesday", time_slot="11:00 AM", subject="Physics", teacher_id=t2.id),
             Lecture(section="B", day="Wednesday", time_slot="01:00 PM", subject="Chemistry", teacher_id=t4.id),
@@ -61,4 +55,5 @@ def seed_data():
         print("✅ Database has been populated successfully!")
 
 if __name__ == '__main__':
+
     seed_data()
