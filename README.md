@@ -38,13 +38,13 @@ cd SmartEdu-Planner
 ### 2. Create a Virtual Environment
 It is highly recommended to use a virtual environment to manage project dependencies.
 
-### For Windows
+For Windows
 ```bash
 python -m venv venv
 venv\Scripts\activate
 ```
 
-### For macOS/Linux
+For macOS/Linux
 ```bash
 python3 -m venv venv
 source venv/bin/activate
@@ -77,4 +77,5 @@ python run.py
 ### For Admin
 - **ID:** admin
 - **Password:** admin
+
 
