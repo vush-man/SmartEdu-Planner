@@ -67,20 +67,18 @@ Start the Flask development server.
 ```bash
 python run.py
 ```
-# Default login credentials
+# 🔗 Default login credentials
 ### For Student
-**1st ID:** studentA
+- **1st ID:** studentA
+- **Password:** student
 
-**Password:** student
-
-**2nd ID:** studentB
-
-**Password:** student
+- **2nd ID:** studentB
+- **Password:** student
 
 ### For Admin
-**ID:** admin
+- **ID:** admin
+- **Password:** admin
 
-**Password:** admin
 
 
 
