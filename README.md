@@ -8,36 +8,36 @@ The Smart Classroom system is designed to streamline the process of academic sch
 Students can log in to view their personal, section-specific timetable, which is always up-to-date. They also have the option to download their schedule in user-friendly formats like PDF and Excel for offline access.
 
 # ✨ Key Features
-**Role-Based Access Control:** Separate, secure login and dashboard views for Administrators and Students.
+- **Role-Based Access Control:** Separate, secure login and dashboard views for Administrators and Students.
 
-**Admin Dashboard:** A comprehensive interface to manage the entire weekly schedule.
+- **Admin Dashboard:** A comprehensive interface to manage the entire weekly schedule.
 
-Add and delete lectures.
+- Add and delete lectures.
 
-View all sections and teachers at a glance.
+- View all sections and teachers at a glance.
 
-**Intelligent Substitute Assignment:** Automatically finds and assigns an available teacher of the same subject when a substitute is needed.
+- **Intelligent Substitute Assignment:** Automatically finds and assigns an available teacher of the same subject when a substitute is needed.
 
-**Student Dashboard:** A clean, easy-to-read view of the student's personal weekly timetable, sorted by day.
+- **Student Dashboard:** A clean, easy-to-read view of the student's personal weekly timetable, sorted by day.
 
-**Timetable Export:** Students can download their personal timetable in two convenient formats:
+- **Timetable Export:** Students can download their personal timetable in two convenient formats:
 
-**PDF:** A grid-based, print-friendly document.
+- **PDF:** A grid-based, print-friendly document.
 
-**Excel:** A fully formatted .xlsx spreadsheet.
+- **Excel:** A fully formatted .xlsx spreadsheet.
 
-**Modular & Scalable:** Built using Flask Blueprints and a service-oriented structure for easy maintenance and future expansion.
+- **Modular & Scalable:** Built using Flask Blueprints and a service-oriented structure for easy maintenance and future expansion.
 
 # 🛠️ Tech Stack
-**Backend:** Flask, Flask-SQLAlchemy, Flask-Login
+- **Backend:** Flask, Flask-SQLAlchemy, Flask-Login
 
-**Database:** SQLite
+- **Database:** SQLite
 
-**PDF Generation:** ReportLab
+- **PDF Generation:** ReportLab
 
-**Excel Generation:** Openpyxl
+- **Excel Generation:** Openpyxl
 
-**Frontend:** HTML, CSS (with Jinja2 for templating)
+- **Frontend:** HTML, CSS (with Jinja2 for templating)
 
 # 🚀 Setup and Installation
 To get the project running locally, follow these steps:
@@ -80,6 +80,7 @@ Start the Flask development server.
 ```bash
 python run.py
 ```
+
 
 
 
