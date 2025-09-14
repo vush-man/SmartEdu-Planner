@@ -1,0 +1,17 @@
+Flask
+Flask-Cors
+Flask-JWT-Extended
+Flask-SQLAlchemy
+psycopg2-binary  
+ortools      
+openai
+scikit-learn
+pandas
+numpy
+reportlab
+openpyxl
+google-api-python-client
+google-auth
+google-auth-oauthlib
+requests
+flask_login

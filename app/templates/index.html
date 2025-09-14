@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <table class="lecture-table">
+        <thead>
+            <tr>
+                <th>Time</th>
+                <th>Subject</th>
+                <th>Section</th>
+                <th>Teacher</th>
+                <th>Status</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for lecture in lectures %}
+            <tr>
+                <td>{{ lecture.time_slot }}</td>
+                <td>{{ lecture.subject }}</td>
+                <td>{{ lecture.section }}</td>
+                
+                <td>{{ lecture.teacher.name }}</td> 
+                
+                <td>
+                    <span class="status-{{ lecture.status }}">{{ lecture.status }}</span>
+                </td>
+                <td>
+                    {% if lecture.status != 'Cancelled' %}
+                        <form action="{{ url_for('api.request_substitute', lecture_id=lecture.id) }}" method="post" style="display:inline;">
+                            <button type="submit" class="btn">Request Substitute</button>
+                        </form>
+                    {% endif %}
+                </td>
+            </tr>
+            {% else %}
+            <tr>
+                <td colspan="6">No lectures scheduled.</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

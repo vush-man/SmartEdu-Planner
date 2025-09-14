@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="dashboard-header">
+    <h2>Student Dashboard</h2>
+    <p>Welcome, {{ current_user.username }}! Here is your weekly schedule for Section {{ current_user.section }}.</p>
+</div>
+
+<div class="dashboard-actions">
+    <a href="{{ url_for('main.download_timetable_pdf') }}" class="btn btn-primary">Download Timetable (PDF)</a>
+    <a href="{{ url_for('main.download_timetable_excel') }}" class="btn btn-success">Download Timetable (Excel)</a>
+</div>
+
+<div class="card">
+    <h3>Your Schedule</h3>
+    <div class="table-responsive">
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th>Day</th>
+                    <th>Time</th>
+                    <th>Subject</th>
+                    <th>Teacher</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for lecture in lectures %}
+                <tr>
+                    <td>{{ lecture.day }}</td>
+                    <td>{{ lecture.time_slot }}</td>
+                    <td>{{ lecture.subject }}</td>
+                    <td>{{ lecture.teacher.name }}</td>
+                    <td>
+                        <span class="status-{{ lecture.status }}">{{ lecture.status }}</span>
+                    </td>
+                </tr>
+                {% else %}
+                <tr>
+                    <td colspan="5">You have no lectures scheduled.</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+{% endblock %}
