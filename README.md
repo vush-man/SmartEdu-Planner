@@ -42,7 +42,7 @@ Frontend: HTML, CSS (with Jinja2 for templating)
 To get the project running locally, follow these steps:
 
 1. Clone the Repository
-git clone [https://github.com/your-username/smart-classroom.git](https://github.com/your-username/smart-classroom.git)
+git clone here.(https://github.com/vush-man/SmartEdu-Planner.git)
 cd smart-classroom
 
 2. Create a Virtual Environment
@@ -68,5 +68,6 @@ python seed_db.py
 
 5. Run the Application
 Start the Flask development server.
+
 
 python run.py
