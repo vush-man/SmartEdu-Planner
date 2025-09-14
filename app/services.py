@@ -4,7 +4,6 @@ from openpyxl import Workbook
 from openpyxl.styles import Font, Alignment, Border, Side, PatternFill
 from reportlab.lib.pagesizes import letter, landscape
 from reportlab.lib import colors
-# Import the Spacer class
 from reportlab.platypus import SimpleDocTemplate, Table, TableStyle, Spacer
 
 def find_and_assign_substitute(lecture_id: int):
@@ -142,4 +141,5 @@ def generate_timetable_excel(user):
     buffer = BytesIO()
     wb.save(buffer)
     buffer.seek(0)
+
     return buffer
