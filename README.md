@@ -71,18 +71,9 @@ python run.py
 ### For Student
 - **1st ID:** studentA
 - **Password:** student
-
 - **2nd ID:** studentB
 - **Password:** student
 
 ### For Admin
 - **ID:** admin
 - **Password:** admin
-
-
-
-
-
-
-
-
