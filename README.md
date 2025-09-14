@@ -1,4 +1,4 @@
-# Smart Classroom Timetable Management System
+# 🧑‍🏫 Smart Classroom Timetable Management System
 
 A web-based application built with Flask to manage, view, and organize classroom schedules. The system provides separate interfaces for administrators and students, with features for automatic substitute assignment and timetable exporting.
 
@@ -77,3 +77,4 @@ python run.py
 ### For Admin
 - **ID:** admin
 - **Password:** admin
+
