@@ -41,7 +41,7 @@ It is highly recommended to use a virtual environment to manage project dependen
 For Windows
 ```bash
 python -m venv venv
-venv\Scripts\activate
+venv\Scripts\activate.bat
 ```
 
 For macOS/Linux
@@ -77,5 +77,6 @@ python run.py
 ### For Admin
 - **ID:** admin
 - **Password:** admin
+
 
 
